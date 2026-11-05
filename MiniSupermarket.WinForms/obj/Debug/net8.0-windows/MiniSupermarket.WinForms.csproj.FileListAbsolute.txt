@@ -1,0 +1,92 @@
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.exe
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.deps.json
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.runtimeconfig.json
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.dll
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.pdb
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\System.Net.Http.Json.dll
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\System.Text.Json.dll
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.csproj.AssemblyReference.cache
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.Form1.resources
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormCategoryManagement.resources
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormCustomerManagement.resources
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormLogin.resources
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormPOS.resources
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormRoleManagement.resources
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.csproj.GenerateResource.cache
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.GeneratedMSBuildEditorConfig.editorconfig
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.AssemblyInfoInputs.cache
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.AssemblyInfo.cs
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.csproj.CoreCompileInputs.cache
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupe.2D6382AC.Up2Date
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.dll
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\refint\MiniSupermarket.WinForms.dll
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.pdb
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.genruntimeconfig.cache
+D:\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\ref\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.deps.json
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.runtimeconfig.json
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.pdb
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\System.Net.Http.Json.dll
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.csproj.AssemblyReference.cache
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.Form1.resources
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormCategoryManagement.resources
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormCustomerManagement.resources
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormLogin.resources
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormPOS.resources
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.FormRoleManagement.resources
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.csproj.GenerateResource.cache
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.AssemblyInfoInputs.cache
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.AssemblyInfo.cs
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.csproj.CoreCompileInputs.cache
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupe.2D6382AC.Up2Date
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\refint\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.pdb
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\MiniSupermarket.WinForms.genruntimeconfig.cache
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\obj\Debug\net8.0-windows\ref\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build\MiniSupermarket.WinForms.exe
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build\MiniSupermarket.WinForms.deps.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build\MiniSupermarket.WinForms.runtimeconfig.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build\MiniSupermarket.WinForms.pdb
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build_verify\MiniSupermarket.WinForms.exe
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build_verify\MiniSupermarket.WinForms.deps.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build_verify\MiniSupermarket.WinForms.runtimeconfig.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build_verify\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_POS_build_verify\MiniSupermarket.WinForms.pdb
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_verify\MiniSupermarket.WinForms.exe
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_verify\MiniSupermarket.WinForms.deps.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_verify\MiniSupermarket.WinForms.runtimeconfig.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_verify\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_verify\MiniSupermarket.WinForms.pdb
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_final\MiniSupermarket.WinForms.exe
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_final\MiniSupermarket.WinForms.deps.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_final\MiniSupermarket.WinForms.runtimeconfig.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_final\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\AppData\Local\Temp\CleanHouse_WinForms_final\MiniSupermarket.WinForms.pdb
+C:\Users\Elly Hạnh\Downloads\CleanHouse_POS_DangVanMinhPhuc\MiniSupermarket.WinForms\bin\Debug\net8.0-windows\MiniSupermarket.WinForms.exe
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuild\MiniSupermarket.WinForms.deps.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuild\MiniSupermarket.WinForms.runtimeconfig.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuild\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuild\MiniSupermarket.WinForms.pdb
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuildFinal\MiniSupermarket.WinForms.deps.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuildFinal\MiniSupermarket.WinForms.runtimeconfig.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuildFinal\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuildFinal\MiniSupermarket.WinForms.pdb
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuildCheck\MiniSupermarket.WinForms.deps.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuildCheck\MiniSupermarket.WinForms.runtimeconfig.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuildCheck\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosBuildCheck\MiniSupermarket.WinForms.pdb
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosStockBuild\MiniSupermarket.WinForms.deps.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosStockBuild\MiniSupermarket.WinForms.runtimeconfig.json
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosStockBuild\MiniSupermarket.WinForms.dll
+C:\Users\Elly Hạnh\AppData\Local\Temp\PosStockBuild\MiniSupermarket.WinForms.pdb

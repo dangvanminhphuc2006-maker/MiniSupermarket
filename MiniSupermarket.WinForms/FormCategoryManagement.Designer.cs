@@ -1,1101 +1,584 @@
-﻿namespace MiniSupermarket.WinForms
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace MiniSupermarket.WinForms
 {
     partial class FormCategoryManagement
     {
         private System.ComponentModel.IContainer components = null;
 
-        private System.Windows.Forms.Panel pnlHeader;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblSubtitle;
-
-        private System.Windows.Forms.Panel pnlSearch;
-        private System.Windows.Forms.Label lblSearch;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Button btnReload;
-
-        private System.Windows.Forms.Panel pnlList;
-        private System.Windows.Forms.Label lblListTitle;
-        private System.Windows.Forms.Label lblListCount;
-        private System.Windows.Forms.DataGridView dataGridView1;
-
-        private System.Windows.Forms.Panel pnlInfo;
-        private System.Windows.Forms.Label lblInfoTitle;
-        private System.Windows.Forms.Label lblInfoSubtitle;
-
-        private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.TextBox txtID;
-
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.TextBox txtName;
-
-        private System.Windows.Forms.Label lblDescription;
-        private System.Windows.Forms.TextBox txtDescription;
-
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnDelete;
-
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel lblStatus;
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDescription;
-
         protected override void Dispose(bool disposing)
         {
-            if (disposing && components != null)
+            if (disposing && (components != null))
             {
                 components.Dispose();
             }
-
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblSubtitle = new System.Windows.Forms.Label();
-
-            this.pnlSearch = new System.Windows.Forms.Panel();
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.btnReload = new System.Windows.Forms.Button();
-
-            this.pnlList = new System.Windows.Forms.Panel();
-            this.lblListTitle = new System.Windows.Forms.Label();
-            this.lblListCount = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-
-            this.pnlInfo = new System.Windows.Forms.Panel();
-            this.lblInfoTitle = new System.Windows.Forms.Label();
-            this.lblInfoSubtitle = new System.Windows.Forms.Label();
-
-            this.lblID = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
-
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.pnlHeader.SuspendLayout();
-            this.pnlSearch.SuspendLayout();
-            this.pnlList.SuspendLayout();
-            this.pnlInfo.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.SuspendLayout();
-
-            // =========================================================
-            // FORM
-            // =========================================================
-
-            this.AutoScaleDimensions =
-                new System.Drawing.SizeF(7F, 15F);
-
-            this.AutoScaleMode =
-                System.Windows.Forms.AutoScaleMode.Font;
-
-            this.BackColor =
-                System.Drawing.Color.FromArgb(245, 247, 250);
-
-            this.ClientSize =
-                new System.Drawing.Size(1050, 650);
-
-            this.MinimumSize =
-                new System.Drawing.Size(950, 600);
-
-            this.StartPosition =
-                System.Windows.Forms.FormStartPosition.CenterScreen;
-
-            this.Text =
-                "Quản lý nhóm hàng";
-
-            this.Name =
-                "FormCategoryManagement";
-
-            this.Font =
-                new System.Drawing.Font(
-                    "Segoe UI",
-                    9F);
-
-            // =========================================================
-            // HEADER
-            // =========================================================
-
-            this.pnlHeader.BackColor =
-                System.Drawing.Color.FromArgb(0, 102, 204);
-
-            this.pnlHeader.Dock =
-                System.Windows.Forms.DockStyle.Top;
-
-            this.pnlHeader.Height = 82;
-
-            this.pnlHeader.Controls.Add(
-                this.lblTitle);
-
-            this.pnlHeader.Controls.Add(
-                this.lblSubtitle);
-
-            // TITLE
-
-            this.lblTitle.AutoSize = true;
-
-            this.lblTitle.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    20F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.lblTitle.ForeColor =
-                System.Drawing.Color.White;
-
-            this.lblTitle.Location =
-                new System.Drawing.Point(25, 12);
-
-            this.lblTitle.Name =
-                "lblTitle";
-
-            this.lblTitle.Text =
-                "Quản lý nhóm hàng";
-
-            // SUBTITLE
-
-            this.lblSubtitle.AutoSize = true;
-
-            this.lblSubtitle.Font =
-                new System.Drawing.Font(
-                    "Segoe UI",
-                    9F);
-
-            this.lblSubtitle.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    220, 235, 255);
-
-            this.lblSubtitle.Location =
-                new System.Drawing.Point(28, 50);
-
-            this.lblSubtitle.Name =
-                "lblSubtitle";
-
-            this.lblSubtitle.Text =
-                "Quản lý danh mục hàng hóa trong siêu thị";
-
-            // =========================================================
-            // SEARCH PANEL
-            // =========================================================
-
-            this.pnlSearch.BackColor =
-                System.Drawing.Color.White;
-
-            this.pnlSearch.Dock =
-                System.Windows.Forms.DockStyle.Top;
-
-            this.pnlSearch.Height = 75;
-
-            this.pnlSearch.Controls.Add(
-                this.lblSearch);
-
-            this.pnlSearch.Controls.Add(
-                this.txtSearch);
-
-            this.pnlSearch.Controls.Add(
-                this.btnSearch);
-
-            this.pnlSearch.Controls.Add(
-                this.btnReload);
-
-            // LABEL SEARCH
-
-            this.lblSearch.AutoSize = true;
-
-            this.lblSearch.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.lblSearch.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    52, 58, 64);
-
-            this.lblSearch.Location =
-                new System.Drawing.Point(20, 28);
-
-            this.lblSearch.Name =
-                "lblSearch";
-
-            this.lblSearch.Text =
-                "Tìm kiếm:";
-
-            // TEXT SEARCH
-
-            this.txtSearch.BorderStyle =
-                System.Windows.Forms.BorderStyle.FixedSingle;
-
-            this.txtSearch.Font =
-                new System.Drawing.Font(
-                    "Segoe UI",
-                    10F);
-
-            this.txtSearch.ForeColor =
-                System.Drawing.Color.Gray;
-
-            this.txtSearch.Location =
-                new System.Drawing.Point(90, 22);
-
-            this.txtSearch.Name =
-                "txtSearch";
-
-            this.txtSearch.Size =
-                new System.Drawing.Size(310, 25);
-
-            this.txtSearch.TabIndex = 0;
-
-            this.txtSearch.Text =
-                "Nhập từ khóa...";
-
-            this.txtSearch.Enter +=
-                new System.EventHandler(
-                    this.txtSearch_Enter);
-
-            this.txtSearch.Leave +=
-                new System.EventHandler(
-                    this.txtSearch_Leave);
-
-            // SEARCH BUTTON
-
-            this.btnSearch.BackColor =
-                System.Drawing.Color.FromArgb(
-                    0, 123, 255);
-
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-
-            this.btnSearch.FlatStyle =
-                System.Windows.Forms.FlatStyle.Flat;
-
-            this.btnSearch.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.btnSearch.ForeColor =
-                System.Drawing.Color.White;
-
-            this.btnSearch.Location =
-                new System.Drawing.Point(410, 21);
-
-            this.btnSearch.Name =
-                "btnSearch";
-
-            this.btnSearch.Size =
-                new System.Drawing.Size(90, 28);
-
-            this.btnSearch.TabIndex = 1;
-
-            this.btnSearch.Text =
-                "Tìm kiếm";
-
-            this.btnSearch.UseVisualStyleBackColor =
-                false;
-
-            this.btnSearch.Click +=
-                new System.EventHandler(
-                    this.btnSearch_Click);
-
-            // RELOAD BUTTON
-
-            this.btnReload.BackColor =
-                System.Drawing.Color.FromArgb(
-                    108, 117, 125);
-
-            this.btnReload.FlatAppearance.BorderSize = 0;
-
-            this.btnReload.FlatStyle =
-                System.Windows.Forms.FlatStyle.Flat;
-
-            this.btnReload.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.btnReload.ForeColor =
-                System.Drawing.Color.White;
-
-            this.btnReload.Location =
-                new System.Drawing.Point(508, 21);
-
-            this.btnReload.Name =
-                "btnReload";
-
-            this.btnReload.Size =
-                new System.Drawing.Size(85, 28);
-
-            this.btnReload.TabIndex = 2;
-
-            this.btnReload.Text =
-                "Tải lại";
-
-            this.btnReload.UseVisualStyleBackColor =
-                false;
-
-            this.btnReload.Click +=
-                new System.EventHandler(
-                    this.btnReload_Click);
-
-            // =========================================================
-            // LIST PANEL
-            // =========================================================
-
-            this.pnlList.BackColor =
-                System.Drawing.Color.White;
-
-            this.pnlList.BorderStyle =
-                System.Windows.Forms.BorderStyle.FixedSingle;
-
-            this.pnlList.Location =
-                new System.Drawing.Point(20, 172);
-
-            this.pnlList.Name =
-                "pnlList";
-
-            this.pnlList.Size =
-                new System.Drawing.Size(635, 420);
-
-            this.pnlList.Anchor =
-                System.Windows.Forms.AnchorStyles.Top |
-                System.Windows.Forms.AnchorStyles.Bottom |
-                System.Windows.Forms.AnchorStyles.Left;
-
-            this.pnlList.Controls.Add(
-                this.lblListTitle);
-
-            this.pnlList.Controls.Add(
-                this.lblListCount);
-
-            this.pnlList.Controls.Add(
-                this.dataGridView1);
-
-            // LIST TITLE
-
-            this.lblListTitle.AutoSize = true;
-
-            this.lblListTitle.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    12F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.lblListTitle.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    33, 37, 41);
-
-            this.lblListTitle.Location =
-                new System.Drawing.Point(18, 14);
-
-            this.lblListTitle.Name =
-                "lblListTitle";
-
-            this.lblListTitle.Text =
-                "Danh sách nhóm hàng";
-
-            // LIST COUNT
-
-            this.lblListCount.AutoSize = true;
-
-            this.lblListCount.Font =
-                new System.Drawing.Font(
-                    "Segoe UI",
-                    9F);
-
-            this.lblListCount.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    108, 117, 125);
-
-            this.lblListCount.Location =
-                new System.Drawing.Point(20, 43);
-
-            this.lblListCount.Name =
-                "lblListCount";
-
-            this.lblListCount.Text =
-                "Tổng cộng: 0 nhóm hàng";
-
-            // =========================================================
-            // DATAGRIDVIEW
-            // =========================================================
-
-            this.dataGridView1.AllowUserToAddRows =
-                false;
-
-            this.dataGridView1.AllowUserToDeleteRows =
-                false;
-
-            this.dataGridView1.AllowUserToResizeRows =
-                false;
-
-            this.dataGridView1.AutoGenerateColumns =
-                false;
-
-            this.dataGridView1.BackgroundColor =
-                System.Drawing.Color.White;
-
-            this.dataGridView1.BorderStyle =
-                System.Windows.Forms.BorderStyle.None;
-
-            this.dataGridView1.CellBorderStyle =
-                System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-
-            this.dataGridView1.ColumnHeadersBorderStyle =
-                System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-
-            this.dataGridView1.ColumnHeadersHeight =
-                38;
-
-            this.dataGridView1.ColumnHeadersHeightSizeMode =
-                System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-
-            this.dataGridView1.EnableHeadersVisualStyles =
-                false;
-
-            this.dataGridView1.GridColor =
-                System.Drawing.Color.FromArgb(
-                    233, 236, 239);
-
-            this.dataGridView1.Location =
-                new System.Drawing.Point(18, 72);
-
-            this.dataGridView1.MultiSelect =
-                false;
-
-            this.dataGridView1.Name =
-                "dataGridView1";
-
-            this.dataGridView1.ReadOnly =
-                true;
-
-            this.dataGridView1.RowHeadersVisible =
-                false;
-
-            this.dataGridView1.RowTemplate.Height =
-                36;
-
-            this.dataGridView1.SelectionMode =
-                System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-
-            this.dataGridView1.Size =
-                new System.Drawing.Size(597, 330);
-
-            this.dataGridView1.Anchor =
-                System.Windows.Forms.AnchorStyles.Top |
-                System.Windows.Forms.AnchorStyles.Bottom |
-                System.Windows.Forms.AnchorStyles.Left |
-                System.Windows.Forms.AnchorStyles.Right;
-
-            this.dataGridView1.TabIndex = 3;
-
-            this.dataGridView1.Columns.AddRange(
-                new System.Windows.Forms.DataGridViewColumn[]
-                {
-                    this.colID,
-                    this.colName,
-                    this.colDescription
-                });
-
-            this.dataGridView1.CellClick +=
-                new System.Windows.Forms.DataGridViewCellEventHandler(
-                    this.dataGridView1_CellClick);
-
-            // HEADER COLOR
-
-            this.dataGridView1.ColumnHeadersDefaultCellStyle.BackColor =
-                System.Drawing.Color.FromArgb(
-                    0, 102, 204);
-
-            this.dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor =
-                System.Drawing.Color.White;
-
-            this.dataGridView1.ColumnHeadersDefaultCellStyle.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            // CELL COLOR
-
-            this.dataGridView1.DefaultCellStyle.BackColor =
-                System.Drawing.Color.White;
-
-            this.dataGridView1.DefaultCellStyle.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    33, 37, 41);
-
-            this.dataGridView1.DefaultCellStyle.SelectionBackColor =
-                System.Drawing.Color.FromArgb(
-                    219, 238, 255);
-
-            this.dataGridView1.DefaultCellStyle.SelectionForeColor =
-                System.Drawing.Color.FromArgb(
-                    0, 64, 128);
-
-            // =========================================================
-            // COLUMNS
-            // =========================================================
-
-            this.colID.DataPropertyName =
-                "ID";
-
-            this.colID.HeaderText =
-                "Mã";
-
-            this.colID.Name =
-                "colID";
-
-            this.colID.ReadOnly = true;
-
-            this.colID.Width = 60;
-
-            this.colName.DataPropertyName =
-                "Name";
-
-            this.colName.HeaderText =
-                "Tên nhóm hàng";
-
-            this.colName.Name =
-                "colName";
-
-            this.colName.ReadOnly = true;
-
-            this.colName.Width = 190;
-
-            this.colDescription.DataPropertyName =
-                "Description";
-
-            this.colDescription.HeaderText =
-                "Mô tả";
-
-            this.colDescription.Name =
-                "colDescription";
-
-            this.colDescription.ReadOnly = true;
-
-            this.colDescription.AutoSizeMode =
-                System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-
-            // =========================================================
-            // INFO PANEL
-            // =========================================================
-
-            this.pnlInfo.BackColor =
-                System.Drawing.Color.White;
-
-            this.pnlInfo.BorderStyle =
-                System.Windows.Forms.BorderStyle.FixedSingle;
-
-            this.pnlInfo.Location =
-                new System.Drawing.Point(675, 172);
-
-            this.pnlInfo.Name =
-                "pnlInfo";
-
-            this.pnlInfo.Size =
-                new System.Drawing.Size(355, 420);
-
-            this.pnlInfo.Anchor =
-                System.Windows.Forms.AnchorStyles.Top |
-                System.Windows.Forms.AnchorStyles.Bottom |
-                System.Windows.Forms.AnchorStyles.Left |
-                System.Windows.Forms.AnchorStyles.Right;
-
-            this.pnlInfo.Controls.Add(
-                this.lblInfoTitle);
-
-            this.pnlInfo.Controls.Add(
-                this.lblInfoSubtitle);
-
-            this.pnlInfo.Controls.Add(
-                this.lblID);
-
-            this.pnlInfo.Controls.Add(
-                this.txtID);
-
-            this.pnlInfo.Controls.Add(
-                this.lblName);
-
-            this.pnlInfo.Controls.Add(
-                this.txtName);
-
-            this.pnlInfo.Controls.Add(
-                this.lblDescription);
-
-            this.pnlInfo.Controls.Add(
-                this.txtDescription);
-
-            this.pnlInfo.Controls.Add(
-                this.btnAdd);
-
-            this.pnlInfo.Controls.Add(
-                this.btnUpdate);
-
-            this.pnlInfo.Controls.Add(
-                this.btnDelete);
-
-            // INFO TITLE
-
-            this.lblInfoTitle.AutoSize = true;
-
-            this.lblInfoTitle.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    12F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.lblInfoTitle.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    33, 37, 41);
-
-            this.lblInfoTitle.Location =
-                new System.Drawing.Point(20, 14);
-
-            this.lblInfoTitle.Name =
-                "lblInfoTitle";
-
-            this.lblInfoTitle.Text =
-                "Thông tin nhóm hàng";
-
-            // INFO SUBTITLE
-
-            this.lblInfoSubtitle.AutoSize = true;
-
-            this.lblInfoSubtitle.Font =
-                new System.Drawing.Font(
-                    "Segoe UI",
-                    8.5F);
-
-            this.lblInfoSubtitle.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    108, 117, 125);
-
-            this.lblInfoSubtitle.Location =
-                new System.Drawing.Point(20, 43);
-
-            this.lblInfoSubtitle.Name =
-                "lblInfoSubtitle";
-
-            this.lblInfoSubtitle.Text =
-                "Chọn nhóm hàng để xem hoặc chỉnh sửa";
-
-            // =========================================================
-            // ID
-            // =========================================================
-
-            this.lblID.AutoSize = true;
-
-            this.lblID.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.lblID.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    73, 80, 87);
-
-            this.lblID.Location =
-                new System.Drawing.Point(20, 82);
-
-            this.lblID.Name =
-                "lblID";
-
-            this.lblID.Text =
-                "Mã nhóm hàng";
-
-            this.txtID.BackColor =
-                System.Drawing.Color.FromArgb(
-                    241, 243, 245);
-
-            this.txtID.BorderStyle =
-                System.Windows.Forms.BorderStyle.FixedSingle;
-
-            this.txtID.Font =
-                new System.Drawing.Font(
-                    "Segoe UI",
-                    10F);
-
-            this.txtID.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    108, 117, 125);
-
-            this.txtID.Location =
-                new System.Drawing.Point(20, 103);
-
-            this.txtID.Name =
-                "txtID";
-
-            this.txtID.ReadOnly = true;
-
-            this.txtID.Size =
-                new System.Drawing.Size(310, 25);
-
-            this.txtID.TabIndex = 4;
-
-            // =========================================================
-            // NAME
-            // =========================================================
-
-            this.lblName.AutoSize = true;
-
-            this.lblName.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.lblName.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    73, 80, 87);
-
-            this.lblName.Location =
-                new System.Drawing.Point(20, 143);
-
-            this.lblName.Name =
-                "lblName";
-
-            this.lblName.Text =
-                "Tên nhóm hàng *";
-
-            this.txtName.BackColor =
-                System.Drawing.Color.White;
-
-            this.txtName.BorderStyle =
-                System.Windows.Forms.BorderStyle.FixedSingle;
-
-            this.txtName.Font =
-                new System.Drawing.Font(
-                    "Segoe UI",
-                    10F);
-
-            this.txtName.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    33, 37, 41);
-
-            this.txtName.Location =
-                new System.Drawing.Point(20, 164);
-
-            this.txtName.Name =
-                "txtName";
-
-            this.txtName.Size =
-                new System.Drawing.Size(310, 25);
-
-            this.txtName.TabIndex = 5;
-
-            // =========================================================
-            // DESCRIPTION
-            // =========================================================
-
-            this.lblDescription.AutoSize = true;
-
-            this.lblDescription.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.lblDescription.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    73, 80, 87);
-
-            this.lblDescription.Location =
-                new System.Drawing.Point(20, 204);
-
-            this.lblDescription.Name =
-                "lblDescription";
-
-            this.lblDescription.Text =
-                "Mô tả";
-
-            this.txtDescription.BackColor =
-                System.Drawing.Color.White;
-
-            this.txtDescription.BorderStyle =
-                System.Windows.Forms.BorderStyle.FixedSingle;
-
-            this.txtDescription.Font =
-                new System.Drawing.Font(
-                    "Segoe UI",
-                    10F);
-
-            this.txtDescription.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    33, 37, 41);
-
-            this.txtDescription.Location =
-                new System.Drawing.Point(20, 225);
-
-            this.txtDescription.Multiline =
-                true;
-
-            this.txtDescription.Name =
-                "txtDescription";
-
-            this.txtDescription.ScrollBars =
-                System.Windows.Forms.ScrollBars.Vertical;
-
-            this.txtDescription.Size =
-                new System.Drawing.Size(310, 80);
-
-            this.txtDescription.TabIndex = 6;
-
-            // =========================================================
-            // BUTTON ADD
-            // =========================================================
-
-            this.btnAdd.BackColor =
-                System.Drawing.Color.FromArgb(
-                    40, 167, 69);
-
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-
-            this.btnAdd.FlatStyle =
-                System.Windows.Forms.FlatStyle.Flat;
-
-            this.btnAdd.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.btnAdd.ForeColor =
-                System.Drawing.Color.White;
-
-            this.btnAdd.Location =
-                new System.Drawing.Point(20, 330);
-
-            this.btnAdd.Name =
-                "btnAdd";
-
-            this.btnAdd.Size =
-                new System.Drawing.Size(95, 35);
-
-            this.btnAdd.TabIndex = 7;
-
-            this.btnAdd.Text =
-                "Thêm mới";
-
-            this.btnAdd.UseVisualStyleBackColor =
-                false;
-
-            this.btnAdd.Click +=
-                new System.EventHandler(
-                    this.btnAdd_Click);
-
-            // =========================================================
-            // BUTTON UPDATE
-            // =========================================================
-
-            this.btnUpdate.BackColor =
-                System.Drawing.Color.FromArgb(
-                    255, 193, 7);
-
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-
-            this.btnUpdate.FlatStyle =
-                System.Windows.Forms.FlatStyle.Flat;
-
-            this.btnUpdate.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.btnUpdate.ForeColor =
-                System.Drawing.Color.FromArgb(
-                    33, 37, 41);
-
-            this.btnUpdate.Location =
-                new System.Drawing.Point(125, 330);
-
-            this.btnUpdate.Name =
-                "btnUpdate";
-
-            this.btnUpdate.Size =
-                new System.Drawing.Size(95, 35);
-
-            this.btnUpdate.TabIndex = 8;
-
-            this.btnUpdate.Text =
-                "Cập nhật";
-
-            this.btnUpdate.UseVisualStyleBackColor =
-                false;
-
-            this.btnUpdate.Click +=
-                new System.EventHandler(
-                    this.btnUpdate_Click);
-
-            // =========================================================
-            // BUTTON DELETE
-            // =========================================================
-
-            this.btnDelete.BackColor =
-                System.Drawing.Color.FromArgb(
-                    220, 53, 69);
-
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-
-            this.btnDelete.FlatStyle =
-                System.Windows.Forms.FlatStyle.Flat;
-
-            this.btnDelete.Font =
-                new System.Drawing.Font(
-                    "Segoe UI Semibold",
-                    9F,
-                    System.Drawing.FontStyle.Bold);
-
-            this.btnDelete.ForeColor =
-                System.Drawing.Color.White;
-
-            this.btnDelete.Location =
-                new System.Drawing.Point(230, 330);
-
-            this.btnDelete.Name =
-                "btnDelete";
-
-            this.btnDelete.Size =
-                new System.Drawing.Size(100, 35);
-
-            this.btnDelete.TabIndex = 9;
-
-            this.btnDelete.Text =
-                "Xóa nhóm";
-
-            this.btnDelete.UseVisualStyleBackColor =
-                false;
-
-            this.btnDelete.Click +=
-                new System.EventHandler(
-                    this.btnDelete_Click);
-
-            // =========================================================
-            // STATUS STRIP
-            // =========================================================
-
-            this.statusStrip1.BackColor =
-                System.Drawing.Color.FromArgb(
-                    33, 37, 41);
-
-            this.statusStrip1.Dock =
-                System.Windows.Forms.DockStyle.Bottom;
-
-            this.statusStrip1.Items.AddRange(
-                new System.Windows.Forms.ToolStripItem[]
-                {
-                    this.lblStatus
-                });
-
-            this.statusStrip1.Location =
-                new System.Drawing.Point(
-                    0,
-                    628);
-
-            this.statusStrip1.Name =
-                "statusStrip1";
-
-            this.statusStrip1.Size =
-                new System.Drawing.Size(
-                    1050,
-                    22);
-
-            this.statusStrip1.TabIndex = 10;
-
-            // STATUS
-
-            this.lblStatus.ForeColor =
-                System.Drawing.Color.White;
-
-            this.lblStatus.Name =
-                "lblStatus";
-
-            this.lblStatus.Size =
-                new System.Drawing.Size(
-                    39,
-                    17);
-
-            this.lblStatus.Text =
-                "Ready";
-
-            // =========================================================
-            // ADD CONTROLS
-            // =========================================================
-
-            this.Controls.Add(
-                this.pnlHeader);
-
-            this.Controls.Add(
-                this.pnlSearch);
-
-            this.Controls.Add(
-                this.pnlList);
-
-            this.Controls.Add(
-                this.pnlInfo);
-
-            this.Controls.Add(
-                this.statusStrip1);
-
-            // =========================================================
-            // LOAD
-            // =========================================================
-
-            this.Load +=
-                new System.EventHandler(
-                    this.FormCategoryManagement_Load_1);
-
-            // =========================================================
-            // END
-            // =========================================================
-
-            ((System.ComponentModel.ISupportInitialize)
-                (this.dataGridView1)).EndInit();
-
-            this.pnlHeader.ResumeLayout(false);
-            this.pnlHeader.PerformLayout();
-
-            this.pnlSearch.ResumeLayout(false);
-            this.pnlSearch.PerformLayout();
-
-            this.pnlList.ResumeLayout(false);
-            this.pnlList.PerformLayout();
-
-            this.pnlInfo.ResumeLayout(false);
-            this.pnlInfo.PerformLayout();
-
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+
+            panelSearch = new System.Windows.Forms.Panel();
+            lblCategoryCount = new System.Windows.Forms.Label();
+            btnOpenCustomers = new System.Windows.Forms.Button();
+            btnOpenRoles = new System.Windows.Forms.Button();
+            btnLoad = new System.Windows.Forms.Button();
+            btnSearch = new System.Windows.Forms.Button();
+            txtKeyword = new System.Windows.Forms.TextBox();
+            lblSearch = new System.Windows.Forms.Label();
+
+            panelGrid = new System.Windows.Forms.Panel();
+            dgvCategories = new System.Windows.Forms.DataGridView();
+            colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            colDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+
+            panelDetails = new System.Windows.Forms.Panel();
+            groupActions = new System.Windows.Forms.GroupBox();
+            btnClear = new System.Windows.Forms.Button();
+            btnDelete = new System.Windows.Forms.Button();
+            btnUpdate = new System.Windows.Forms.Button();
+            btnAdd = new System.Windows.Forms.Button();
+
+            groupCategoryDetails = new System.Windows.Forms.GroupBox();
+            lblTip = new System.Windows.Forms.Label();
+            txtDescription = new System.Windows.Forms.TextBox();
+            lblDescription = new System.Windows.Forms.Label();
+            txtCategoryName = new System.Windows.Forms.TextBox();
+            lblCategoryName = new System.Windows.Forms.Label();
+            txtId = new System.Windows.Forms.TextBox();
+            lblId = new System.Windows.Forms.Label();
+
+            statusStrip1 = new System.Windows.Forms.StatusStrip();
+            lblReady = new System.Windows.Forms.ToolStripStatusLabel();
+            lblApiUrl = new System.Windows.Forms.ToolStripStatusLabel();
+
+            panelSearch.SuspendLayout();
+            panelGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvCategories).BeginInit();
+            panelDetails.SuspendLayout();
+            groupActions.SuspendLayout();
+            groupCategoryDetails.SuspendLayout();
+            statusStrip1.SuspendLayout();
+            SuspendLayout();
+
+            // 
+            // panelSearch
+            // 
+            panelSearch.BackColor = System.Drawing.Color.White;
+            panelSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panelSearch.Controls.Add(lblCategoryCount);
+            panelSearch.Controls.Add(btnOpenCustomers);
+            panelSearch.Controls.Add(btnOpenRoles);
+            panelSearch.Controls.Add(btnLoad);
+            panelSearch.Controls.Add(btnSearch);
+            panelSearch.Controls.Add(txtKeyword);
+            panelSearch.Controls.Add(lblSearch);
+            panelSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            panelSearch.Location = new System.Drawing.Point(0, 0);
+            panelSearch.Name = "panelSearch";
+            panelSearch.Padding = new System.Windows.Forms.Padding(12);
+            panelSearch.Size = new System.Drawing.Size(1040, 60);
+            panelSearch.TabIndex = 0;
+
+            // 
+            // lblSearch
+            // 
+            lblSearch.AutoSize = true;
+            lblSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            lblSearch.ForeColor = System.Drawing.Color.FromArgb(70, 80, 95);
+            lblSearch.Location = new System.Drawing.Point(15, 20);
+            lblSearch.Name = "lblSearch";
+            lblSearch.Size = new System.Drawing.Size(130, 17);
+            lblSearch.TabIndex = 0;
+            lblSearch.Text = "Tìm kiếm danh mục:";
+
+            // 
+            // txtKeyword
+            // 
+            txtKeyword.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            txtKeyword.Location = new System.Drawing.Point(150, 17);
+            txtKeyword.Name = "txtKeyword";
+            txtKeyword.PlaceholderText = "Nhập tên hoặc mã nhóm hàng...";
+            txtKeyword.Size = new System.Drawing.Size(230, 24);
+            txtKeyword.TabIndex = 1;
+            txtKeyword.KeyDown += txtKeyword_KeyDown;
+
+            // 
+            // btnSearch
+            // 
+            btnSearch.BackColor = System.Drawing.Color.FromArgb(41, 100, 180);
+            btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnSearch.FlatAppearance.BorderSize = 0;
+            btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            btnSearch.ForeColor = System.Drawing.Color.White;
+            btnSearch.Location = new System.Drawing.Point(390, 14);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new System.Drawing.Size(85, 30);
+            btnSearch.TabIndex = 2;
+            btnSearch.Text = "🔍 Tìm";
+            btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
+
+            // 
+            // btnLoad
+            // 
+            btnLoad.BackColor = System.Drawing.Color.FromArgb(108, 117, 125);
+            btnLoad.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnLoad.FlatAppearance.BorderSize = 0;
+            btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnLoad.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            btnLoad.ForeColor = System.Drawing.Color.White;
+            btnLoad.Location = new System.Drawing.Point(482, 14);
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new System.Drawing.Size(95, 30);
+            btnLoad.TabIndex = 3;
+            btnLoad.Text = "🔄 Làm mới";
+            btnLoad.UseVisualStyleBackColor = false;
+            btnLoad.Click += btnLoad_Click;
+
+            // 
+            // btnOpenRoles
+            // 
+            btnOpenRoles.BackColor = System.Drawing.Color.FromArgb(244, 245, 247);
+            btnOpenRoles.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnOpenRoles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(210, 215, 225);
+            btnOpenRoles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnOpenRoles.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            btnOpenRoles.ForeColor = System.Drawing.Color.FromArgb(50, 60, 75);
+            btnOpenRoles.Location = new System.Drawing.Point(585, 14);
+            btnOpenRoles.Name = "btnOpenRoles";
+            btnOpenRoles.Size = new System.Drawing.Size(95, 30);
+            btnOpenRoles.TabIndex = 4;
+            btnOpenRoles.Text = "🛡️ Vai trò";
+            btnOpenRoles.UseVisualStyleBackColor = false;
+            btnOpenRoles.Click += btnOpenRoles_Click;
+
+            // 
+            // btnOpenCustomers
+            // 
+            btnOpenCustomers.BackColor = System.Drawing.Color.FromArgb(244, 245, 247);
+            btnOpenCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnOpenCustomers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(210, 215, 225);
+            btnOpenCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnOpenCustomers.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            btnOpenCustomers.ForeColor = System.Drawing.Color.FromArgb(50, 60, 75);
+            btnOpenCustomers.Location = new System.Drawing.Point(688, 14);
+            btnOpenCustomers.Name = "btnOpenCustomers";
+            btnOpenCustomers.Size = new System.Drawing.Size(115, 30);
+            btnOpenCustomers.TabIndex = 5;
+            btnOpenCustomers.Text = "👥 Khách hàng";
+            btnOpenCustomers.UseVisualStyleBackColor = false;
+            btnOpenCustomers.Click += btnOpenCustomers_Click;
+
+            // 
+            // lblCategoryCount
+            // 
+            lblCategoryCount.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            lblCategoryCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            lblCategoryCount.ForeColor = System.Drawing.Color.FromArgb(41, 100, 180);
+            lblCategoryCount.Location = new System.Drawing.Point(820, 20);
+            lblCategoryCount.Name = "lblCategoryCount";
+            lblCategoryCount.Size = new System.Drawing.Size(200, 20);
+            lblCategoryCount.TabIndex = 6;
+            lblCategoryCount.Text = "Tổng số: 0 danh mục";
+            lblCategoryCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+
+            // 
+            // panelGrid
+            // 
+            panelGrid.BackColor = System.Drawing.Color.FromArgb(244, 245, 247);
+            panelGrid.Controls.Add(dgvCategories);
+            panelGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            panelGrid.Location = new System.Drawing.Point(0, 60);
+            panelGrid.Name = "panelGrid";
+            panelGrid.Padding = new System.Windows.Forms.Padding(12);
+            panelGrid.Size = new System.Drawing.Size(700, 578);
+            panelGrid.TabIndex = 1;
+
+            // 
+            // dgvCategories
+            // 
+            dgvCategories.AllowUserToAddRows = false;
+            dgvCategories.AllowUserToDeleteRows = false;
+            dgvCategories.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCategories.BackgroundColor = System.Drawing.Color.White;
+            dgvCategories.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dgvCategories.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvCategories.GridColor = System.Drawing.Color.FromArgb(230, 233, 238);
+
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(24, 30, 48);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(24, 30, 48);
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            dgvCategories.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvCategories.ColumnHeadersHeight = 36;
+            dgvCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+
+            dgvCategories.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colId, colName, colDesc });
+
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(232, 240, 254);
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            dgvCategories.DefaultCellStyle = dataGridViewCellStyle2;
+
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(248, 249, 251);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(232, 240, 254);
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dgvCategories.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+
+            dgvCategories.Dock = System.Windows.Forms.DockStyle.Fill;
+            dgvCategories.EnableHeadersVisualStyles = false;
+            dgvCategories.Location = new System.Drawing.Point(12, 12);
+            dgvCategories.MultiSelect = false;
+            dgvCategories.Name = "dgvCategories";
+            dgvCategories.ReadOnly = true;
+            dgvCategories.RowHeadersVisible = false;
+            dgvCategories.RowTemplate.Height = 32;
+            dgvCategories.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dgvCategories.Size = new System.Drawing.Size(676, 554);
+            dgvCategories.TabIndex = 0;
+            dgvCategories.CellClick += dgvCategories_CellClick;
+
+            // 
+            // colId
+            // 
+            colId.DataPropertyName = "CategoryId";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            colId.DefaultCellStyle = dataGridViewCellStyle3;
+            colId.FillWeight = 16F;
+            colId.HeaderText = "Mã ID";
+            colId.Name = "colId";
+            colId.ReadOnly = true;
+
+            // 
+            // colName
+            // 
+            colName.DataPropertyName = "CategoryName";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            colName.DefaultCellStyle = dataGridViewCellStyle4;
+            colName.FillWeight = 44F;
+            colName.HeaderText = "Tên Nhóm hàng (Danh mục)";
+            colName.Name = "colName";
+            colName.ReadOnly = true;
+
+            // 
+            // colDesc
+            // 
+            colDesc.DataPropertyName = "Description";
+            colDesc.FillWeight = 60F;
+            colDesc.HeaderText = "Mô Tả Chi Tiết";
+            colDesc.Name = "colDesc";
+            colDesc.ReadOnly = true;
+
+            // 
+            // panelDetails
+            // 
+            panelDetails.BackColor = System.Drawing.Color.White;
+            panelDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panelDetails.Controls.Add(groupActions);
+            panelDetails.Controls.Add(groupCategoryDetails);
+            panelDetails.Dock = System.Windows.Forms.DockStyle.Right;
+            panelDetails.Location = new System.Drawing.Point(700, 60);
+            panelDetails.Name = "panelDetails";
+            panelDetails.Padding = new System.Windows.Forms.Padding(12);
+            panelDetails.Size = new System.Drawing.Size(340, 578);
+            panelDetails.TabIndex = 2;
+
+            // 
+            // groupCategoryDetails
+            // 
+            groupCategoryDetails.Controls.Add(lblTip);
+            groupCategoryDetails.Controls.Add(txtDescription);
+            groupCategoryDetails.Controls.Add(lblDescription);
+            groupCategoryDetails.Controls.Add(txtCategoryName);
+            groupCategoryDetails.Controls.Add(lblCategoryName);
+            groupCategoryDetails.Controls.Add(txtId);
+            groupCategoryDetails.Controls.Add(lblId);
+            groupCategoryDetails.Dock = System.Windows.Forms.DockStyle.Top;
+            groupCategoryDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            groupCategoryDetails.Location = new System.Drawing.Point(12, 12);
+            groupCategoryDetails.Name = "groupCategoryDetails";
+            groupCategoryDetails.Padding = new System.Windows.Forms.Padding(10);
+            groupCategoryDetails.Size = new System.Drawing.Size(314, 420);
+            groupCategoryDetails.TabIndex = 0;
+            groupCategoryDetails.TabStop = false;
+            groupCategoryDetails.Text = "Thông tin chi tiết nhóm hàng";
+
+            // 
+            // lblId
+            // 
+            lblId.AutoSize = true;
+            lblId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            lblId.ForeColor = System.Drawing.Color.FromArgb(70, 80, 95);
+            lblId.Location = new System.Drawing.Point(12, 28);
+            lblId.Name = "lblId";
+            lblId.Size = new System.Drawing.Size(107, 15);
+            lblId.TabIndex = 0;
+            lblId.Text = "Mã nhóm hàng ID:";
+
+            // 
+            // txtId
+            // 
+            txtId.BackColor = System.Drawing.Color.FromArgb(240, 240, 240);
+            txtId.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            txtId.Location = new System.Drawing.Point(12, 48);
+            txtId.Name = "txtId";
+            txtId.ReadOnly = true;
+            txtId.Size = new System.Drawing.Size(290, 24);
+            txtId.TabIndex = 1;
+
+            // 
+            // lblCategoryName
+            // 
+            lblCategoryName.AutoSize = true;
+            lblCategoryName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            lblCategoryName.ForeColor = System.Drawing.Color.FromArgb(70, 80, 95);
+            lblCategoryName.Location = new System.Drawing.Point(12, 85);
+            lblCategoryName.Name = "lblCategoryName";
+            lblCategoryName.Size = new System.Drawing.Size(126, 15);
+            lblCategoryName.TabIndex = 2;
+            lblCategoryName.Text = "Tên nhóm hàng (*):";
+
+            // 
+            // txtCategoryName
+            // 
+            txtCategoryName.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            txtCategoryName.Location = new System.Drawing.Point(12, 105);
+            txtCategoryName.Name = "txtCategoryName";
+            txtCategoryName.PlaceholderText = "Nhập tên nhóm hàng...";
+            txtCategoryName.Size = new System.Drawing.Size(290, 24);
+            txtCategoryName.TabIndex = 3;
+
+            // 
+            // lblDescription
+            // 
+            lblDescription.AutoSize = true;
+            lblDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
+            lblDescription.ForeColor = System.Drawing.Color.FromArgb(70, 80, 95);
+            lblDescription.Location = new System.Drawing.Point(12, 145);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new System.Drawing.Size(78, 15);
+            lblDescription.TabIndex = 4;
+            lblDescription.Text = "Mô tả chi tiết:";
+
+            // 
+            // txtDescription
+            // 
+            txtDescription.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            txtDescription.Location = new System.Drawing.Point(12, 165);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.PlaceholderText = "Mô tả chi tiết đặc điểm nhóm hàng...";
+            txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            txtDescription.Size = new System.Drawing.Size(290, 195);
+            txtDescription.TabIndex = 5;
+
+            // 
+            // lblTip
+            // 
+            lblTip.AutoSize = true;
+            lblTip.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Italic);
+            lblTip.ForeColor = System.Drawing.Color.FromArgb(120, 130, 145);
+            lblTip.Location = new System.Drawing.Point(12, 375);
+            lblTip.Name = "lblTip";
+            lblTip.Size = new System.Drawing.Size(270, 13);
+            lblTip.TabIndex = 6;
+            lblTip.Text = "💡 Phân nhóm giúp quản lý giá, tồn kho và bán hàng POS";
+
+            // 
+            // groupActions
+            // 
+            groupActions.Controls.Add(btnClear);
+            groupActions.Controls.Add(btnDelete);
+            groupActions.Controls.Add(btnUpdate);
+            groupActions.Controls.Add(btnAdd);
+            groupActions.Dock = System.Windows.Forms.DockStyle.Bottom;
+            groupActions.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            groupActions.Location = new System.Drawing.Point(12, 422);
+            groupActions.Name = "groupActions";
+            groupActions.Padding = new System.Windows.Forms.Padding(10);
+            groupActions.Size = new System.Drawing.Size(314, 142);
+            groupActions.TabIndex = 1;
+            groupActions.TabStop = false;
+            groupActions.Text = "Hành động tác vụ";
+
+            // 
+            // btnAdd
+            // 
+            btnAdd.BackColor = System.Drawing.Color.FromArgb(40, 167, 69);
+            btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnAdd.FlatAppearance.BorderSize = 0;
+            btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnAdd.ForeColor = System.Drawing.Color.White;
+            btnAdd.Location = new System.Drawing.Point(10, 33);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new System.Drawing.Size(140, 38);
+            btnAdd.TabIndex = 0;
+            btnAdd.Text = "➕ Thêm mới";
+            btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
+
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.BackColor = System.Drawing.Color.FromArgb(255, 152, 0);
+            btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnUpdate.FlatAppearance.BorderSize = 0;
+            btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnUpdate.ForeColor = System.Drawing.Color.White;
+            btnUpdate.Location = new System.Drawing.Point(162, 33);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new System.Drawing.Size(140, 38);
+            btnUpdate.TabIndex = 1;
+            btnUpdate.Text = "✏️ Cập nhật";
+            btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
+
+            // 
+            // btnDelete
+            // 
+            btnDelete.BackColor = System.Drawing.Color.FromArgb(220, 53, 69);
+            btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnDelete.FlatAppearance.BorderSize = 0;
+            btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnDelete.ForeColor = System.Drawing.Color.White;
+            btnDelete.Location = new System.Drawing.Point(10, 85);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(140, 38);
+            btnDelete.TabIndex = 2;
+            btnDelete.Text = "🗑  Xóa";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
+
+            // 
+            // btnClear
+            // 
+            btnClear.BackColor = System.Drawing.Color.FromArgb(108, 117, 125);
+            btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnClear.FlatAppearance.BorderSize = 0;
+            btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnClear.ForeColor = System.Drawing.Color.White;
+            btnClear.Location = new System.Drawing.Point(162, 85);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new System.Drawing.Size(140, 38);
+            btnClear.TabIndex = 3;
+            btnClear.Text = "🔄 Làm mới ô";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
+
+            // 
+            // statusStrip1
+            // 
+            statusStrip1.BackColor = System.Drawing.Color.FromArgb(240, 242, 245);
+            statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { lblReady, lblApiUrl });
+            statusStrip1.Location = new System.Drawing.Point(0, 638);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new System.Drawing.Size(1040, 22);
+            statusStrip1.TabIndex = 3;
+            statusStrip1.Text = "statusStrip1";
+
+            // 
+            // lblReady
+            // 
+            lblReady.Font = new System.Drawing.Font("Segoe UI", 9F);
+            lblReady.ForeColor = System.Drawing.Color.FromArgb(80, 90, 105);
+            lblReady.Name = "lblReady";
+            lblReady.Size = new System.Drawing.Size(52, 17);
+            lblReady.Text = "Sẵn sàng";
+
+            // 
+            // lblApiUrl
+            // 
+            lblApiUrl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            lblApiUrl.ForeColor = System.Drawing.Color.FromArgb(110, 120, 135);
+            lblApiUrl.Name = "lblApiUrl";
+            lblApiUrl.Size = new System.Drawing.Size(130, 17);
+            lblApiUrl.Text = " | API: localhost:5000";
+
+            // 
+            // FormCategoryManagement
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(244, 245, 247);
+            ClientSize = new System.Drawing.Size(1040, 660);
+            Controls.Add(panelGrid);
+            Controls.Add(panelDetails);
+            Controls.Add(panelSearch);
+            Controls.Add(statusStrip1);
+            Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            Name = "FormCategoryManagement";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Hệ thống quản lý siêu thị - Danh mục Nhóm hàng";
+            Load += FormCategoryManagement_Load;
+
+            panelSearch.ResumeLayout(false);
+            panelSearch.PerformLayout();
+            panelGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvCategories).EndInit();
+            panelDetails.ResumeLayout(false);
+            groupActions.ResumeLayout(false);
+            groupCategoryDetails.ResumeLayout(false);
+            groupCategoryDetails.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panelSearch;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.TextBox txtKeyword;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnOpenRoles;
+        private System.Windows.Forms.Button btnOpenCustomers;
+        private System.Windows.Forms.Label lblCategoryCount;
+
+        private System.Windows.Forms.Panel panelGrid;
+        private System.Windows.Forms.DataGridView dgvCategories;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDesc;
+
+        private System.Windows.Forms.Panel panelDetails;
+        private System.Windows.Forms.GroupBox groupCategoryDetails;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.TextBox txtCategoryName;
+        private System.Windows.Forms.Label lblCategoryName;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.Label lblTip;
+
+        private System.Windows.Forms.GroupBox groupActions;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClear;
+
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel lblReady;
+        private System.Windows.Forms.ToolStripStatusLabel lblApiUrl;
     }
 }
